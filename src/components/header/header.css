@@ -1,0 +1,10 @@
+.header-wrapper {
+    background-color: green;
+    height: 100px;
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.imgCar {
+    width: 50px;
+}
