@@ -1,0 +1,29 @@
+.IndexPage {
+  display: grid;
+  grid-gap: 15px;
+  padding: 75px 100px;
+
+  &__logo-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__logo {
+    width: 300px !important;
+    height: 300px !important;
+    margin: -120px 0px;
+  }
+
+  &__cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+  }
+
+  &__card {
+    padding: 50px 25px;
+    border: 1px solid orangered;
+    border-radius: 5px;
+  }
+
+}

@@ -1,0 +1,22 @@
+.CardModulePage {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 25px;
+  padding: 25px 35px;
+
+  &__radio, &__radio-label {
+    &_correct {
+      color: green !important;
+      pointer-events: unset;
+      opacity: 1 !important;
+    }
+    &_disabled {
+      opacity: .4;
+      pointer-events: unset;
+    }
+  }
+
+  .css-1i66d7g[disabled], .css-1i66d7g[aria-disabled=true], .css-1i66d7g[data-disabled] {
+    opacity: 1;
+  }
+}

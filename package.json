@@ -1,44 +1,57 @@
 {
   "name": "pdd-quiz",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "react, redux-toolkit, typescript wrapped in webpack starter",
+  "main": "index.js",
+  "scripts": {
+    "watch": "webpack serve --config webpack/webpack.config.js --env env=dev",
+    "build": "webpack --config webpack/webpack.config.js --env env=prod",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Asgard Pavlov",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.17.9",
+    "@babel/plugin-transform-runtime": "^7.17.0",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-react": "^7.16.7",
+    "@babel/preset-typescript": "^7.16.7",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.5",
+    "@types/react": "^18.0.8",
+    "@types/react-dom": "^18.0.3",
+    "babel-loader": "^8.2.5",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.7.1",
+    "html-webpack-plugin": "^5.5.0",
+    "react-refresh": "^0.13.0",
+    "sass": "^1.51.0",
+    "sass-loader": "^12.6.0",
+    "style-loader": "^3.3.1",
+    "ts-loader": "^9.2.9",
+    "typescript": "^4.6.3",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.8.1",
+    "webpack-merge": "^5.8.0"
+  },
   "dependencies": {
+    "@babel/preset-env": "^7.16.11",
+    "@chakra-ui/icons": "^2.0.4",
+    "@chakra-ui/layout": "^2.1.1",
+    "@chakra-ui/react": "^2.2.4",
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
-    "@fontsource/roboto": "^4.5.7",
-    "@mui/icons-material": "^5.8.4",
-    "@mui/material": "^5.9.1",
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.3.0",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.3.0",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "@reduxjs/toolkit": "^1.8.1",
+    "@types/react-redux": "^7.1.24",
+    "copy-webpack-plugin": "^11.0.0",
+    "dotenv-webpack": "^7.1.0",
+    "eslint": "^7.2.0",
+    "framer-motion": "^6.5.1",
+    "install": "^0.13.0",
+    "npm": "^8.7.0",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-redux": "^8.0.1",
+    "react-router-dom": "6"
   }
 }

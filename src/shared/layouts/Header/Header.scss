@@ -1,0 +1,15 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 75px;
+  padding: 15px 25px;
+  background: orangered;
+
+  &__logo {
+    width: 100px !important;
+    height: 100px !important;
+    margin: -35px 0px;
+  }
+}

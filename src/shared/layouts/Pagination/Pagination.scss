@@ -1,0 +1,12 @@
+.Pagination {
+
+  &__container {
+    display: grid !important;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 5px;
+
+    & > :not(:first-child) {
+      margin-top: 0 !important;
+    }
+  }
+}
